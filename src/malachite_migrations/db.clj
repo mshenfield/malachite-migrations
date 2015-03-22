@@ -110,7 +110,7 @@
   "Generates a function which chooses between the addition 
    and removal of a column depending on whether :up or :down
    is passed to it"
-  [db-config table-name column]
+  [table-name column]
   (fn [db-config symbol]
     (cond
      (= :up symbol)
